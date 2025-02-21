@@ -23,7 +23,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-URL_db = 'postgresql://postgres:ilaadmtaitw@localhost:5432/Expenses' 
+URL_db = 'postgresql://postgres:password@localhost:5432/Expenses' 
 
 engine = create_engine(URL_db)
 sessionLocal = sessionmaker(autocommit=False,autoflush=False,bind=engine)
